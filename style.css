@@ -1,0 +1,128 @@
+@media screen and (min-width: 659px){
+    *{
+        margin:0;
+    }
+    .container{
+        background-color: #000000;
+        overflow: hidden;
+        padding: 100px;
+    }
+    .text{
+        color: white;
+        text-align: center;
+    }
+    .title1{
+        color: black;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        background-color: black;
+    }
+    .navbar-links{
+        display: flex;
+        margin-right: 30px;
+        gap: 30px;
+        list-style: none;
+    }
+    .navbar-links a{
+        text-decoration: none;
+        color: white;
+    }
+    .flag{
+        background-color: white;
+        border-radius: 0 0 8px 8px;
+        border-color: white;
+        margin-left: 20px;
+    }
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+    .year{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10rem;
+        color: white;
+        opacity: 0.2;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    .content h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .class_img{
+        display: block;
+        width: 400px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 16px;
+    }
+}
+@media screen and (max-width: 660px){
+    *{
+        margin:0;
+    }
+    .container{
+        background-color: #000000;
+        overflow: hidden;
+        padding: 70px;
+    }
+    .text{
+        color: white;
+        text-align: center;
+        z-index: 1;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        background-color: black;
+    }
+    .navbar-links{
+        display: flex;
+        margin-right: 30px;
+        gap: 30px;
+        list-style: none;
+    }
+    .navbar-links a{
+        text-decoration: none;
+        color: white;
+    }
+    .flag{
+        background-color: white;
+        border-radius: 0 0 8px 8px;
+        border-color: white;
+        margin-left: 20px;
+    }
+    .logo{
+        width: 100px;
+        height: auto;
+    }
+    .year{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10rem;
+        color: white;
+        opacity: 0.2;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    .content h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .class_img{
+        width: 90vw;
+        margin-top: 10px;
+        margin-inline: 20px;
+        border-radius: 16px;
+    }
+}
