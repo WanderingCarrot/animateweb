@@ -182,8 +182,9 @@
     }
     .prof-img{
         width: 200px;
-        height: 210px;
-        border-radius: 50%;
+        height: 220px;
+        border-radius: 100%;
+        object-fit: cover;
         border: 10px solid #c5891a;
     }
     .footer{
@@ -361,6 +362,7 @@
         width: 100px;
         height: 110px;
         border-radius: 50%;
+        object-fit: cover;
         border: 10px solid #c5891a;
     }
     .footer{
