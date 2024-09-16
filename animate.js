@@ -19,13 +19,32 @@ gsap.from('.flag',{
 gsap.from('.navbar-links', {
     x: 250, opacity: 0, duration: 2
 })
+ScrollTrigger.create({
+    trigger: '.container',
+    start:"center center",
+    end: "+=870",
+    pin: true,
+    pinSpacing: false,
+    scrub: true,
+    snap: true,
+})
 gsap.fromTo('.year', 
     {y: -100, opacity: 0},
     {y: 90, opacity: 0.35, duration: 2})
+
+gsap.fromTo('.abtitle', {
+        y: 130, opacity: 0
+    },{y: -100, opacity: 1, duration: 3.75, delay: 1.5})    
+gsap.fromTo('.abtext1', {
+        y: 130, opacity: 0
+    },{y: -100, opacity: 1, duration: 3.75, delay: 2})
+gsap.fromTo('.about', 
+        {y: -150, opacity: 0, duration: 2, delay: 1},
+        {y: -45, opacity: 0.35, duration: 2})
 gsap.fromTo('.class_img', 
     {scrollTrigger:{
         trigger: '.title1',
-        toggleActions: "restart none none none"
+        toggleActions: "restart none none none",
     },
         x: 100, opacity: 0}, 
     {scrollTrigger:{
@@ -49,26 +68,37 @@ gsap.fromTo('.cleft', {
     scrollTrigger:{
         trigger: '.card-container',
         toggleActions: "restart none none none"
-    }, x: -50, opacity: 0},{scrollTrigger:{
+    }, y: -50, opacity: 0},{scrollTrigger:{
         trigger: '.card-container',
         toggleActions: "restart none none none"
-    }, x: 0, opacity: 1, duration: 3
+    }, y: 0, opacity: 1, duration: 3
 })
 gsap.fromTo('.cright', {
     scrollTrigger:{
         trigger: '.card-container',
         toggleActions: "restart none none none"
-    }, x: 50, opacity: 0},{scrollTrigger:{
+    }, y: 50, opacity: 0},{scrollTrigger:{
         trigger: '.card-container',
         toggleActions: "restart none none none"
-    }, x: 0, opacity: 1, duration: 3
+    }, y: 0, opacity: 1, duration: 3
+})
+gsap.fromTo('.cright', {
+    scrollTrigger:{
+        trigger: '.card-container',
+        toggleActions: "restart none none none"
+    }, y: 50, opacity: 0},{scrollTrigger:{
+        trigger: '.card-container',
+        toggleActions: "restart none none none"
+    }, y: 0, opacity: 1, duration: 3
 })
 gsap.fromTo('.footer', {
     scrollTrigger:{
         trigger: '.footer',
-        toggleActions: "restart none none none"
-    }, y: 100, opacity: 0},{scrollTrigger:{
+        toggleActions: "play none none none"
+    }, y: 0, opacity: 0},{scrollTrigger:{
         trigger: '.footer',
         toggleActions: "restart none none none"
     }, y: 0, opacity: 1, duration: 2
 })
+
+console.log("May I be Your BoyFriend? HM751?")
